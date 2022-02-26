@@ -1,8 +1,9 @@
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
+from dash import Input, Output, State
 import plotly.graph_objs as go
-from dash.dependencies import Input, Output, State
+
 
 ########### Define your variables ######
 
@@ -11,7 +12,7 @@ tabtitle = 'xkcd'
 list_of_options=['box plot', 'correlation', 'git commit', 'scatterplot']
 list_of_images=['outlier.png', 'correlation.png', 'gitcommit.jpg', 'scatterplot.png', 'good_code.png']
 sourceurl = 'https://xkcd.com/'
-githublink = 'https://github.com/austinlasseter/dash-callbacks-radio'
+githublink = 'https://github.com/plotly-dash-apps/203-radio-callbacks'
 
 
 ########## Set up the chart
@@ -54,4 +55,4 @@ def radio_results(image_you_chose):
 
 ############ Deploy
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=True)

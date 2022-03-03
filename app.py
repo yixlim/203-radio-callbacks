@@ -10,7 +10,7 @@ import plotly.graph_objs as go
 myheading1='List of food'
 tabtitle = 'Food'
 list_of_options=['ramen', 'sushi', 'fried chicken', 'french fries']
-list_of_images=['ramen.png', 'sushi.png', 'fried_chicken.jpg', 'frenchfries.png', 'good_code.png']
+list_of_images=['ramen.jpg', 'sushi.jpg', 'fried_chicken.jpg', 'frenchfries.jpg', 'good_code.png']
 sourceurl = 'https://xkcd.com/'
 githublink = 'https://github.com/plotly-dash-apps/203-radio-callbacks'
 
